@@ -31,10 +31,10 @@ function calculateCosts() {
 
     const results = document.getElementById('results');
     results.innerHTML = `
-        <tr><td>Annual Labor Cost</td><td>$${totalLaborCost24.toFixed(2)}</td><td>$${totalLaborCost20.toFixed(2)}</td></tr>
-        <tr><td>Potential Loss (if applied)</td><td>$${potentialLoss24.toFixed(2)}</td><td>$0.00</td></tr>
-        <tr><td>Annual Liner Cost</td><td>$${linerCost24.toFixed(2)}</td><td>$${linerCost20.toFixed(2)}</td></tr>
-        <tr><td>Total Annual Cost</td><td>$${totalCost24.toFixed(2)}</td><td>$${totalCost20.toFixed(2)}</td></tr>
-        <tr><td>Net Savings</td><td colspan="2" style="text-align:center; color:${color};"><strong>$${Math.abs(costDifference).toFixed(2)}</strong> (${color === 'green' ? 'savings' : 'loss'})</td></tr>
+        <tr><td>Annual Labor Cost</td><td>$${totalLaborCost24.toLocaleString()}</td><td>$${totalLaborCost20.toLocaleString()}</td></tr>
+        <tr><td>Potential Loss (if applied)</td><td>$${potentialLoss24.toLocaleString()}</td><td>$0.00</td></tr>
+        <tr><td>Annual Liner Cost</td><td>$${linerCost24.toLocaleString()}</td><td>$${linerCost20.toLocaleString()}</td></tr>
+        <tr><td>Total Annual Cost</td><td>$${totalCost24.toLocaleString()}</td><td>$${totalCost20.toLocaleString()}</td></tr>
+        <tr><td>Net Savings</td><td colspan="2" style="text-align:center; color:${color};"><strong>$${Math.abs(costDifference).toLocaleString()}</strong> (${color === 'green' ? 'savings' : 'loss'})</td></tr>
     `;
 }
