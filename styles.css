@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(238, 28, 37, 0.1);
+    color: #333;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #005bac;
+}
+
+input[type="number"], input[type="checkbox"] {
+    width: 100%; 
+    padding: 8px;
+    margin-bottom: 10px; 
+    border: 2px solid #005bac;
+    border-radius: 4px; 
+}
+
+input[type="submit"] {
+    background-color: #ee1c25; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #cc1a22; 
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #005bac;
+    color: white;
+}
+
+
+.img-container {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto; 
+}
+
+@media (min-width: 600px) {
+    input[type="number"], input[type="checkbox"], button {
+        width: auto; 
+        margin-right: 10px;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 599px) {
+    label, input, button {
+        width: 100%; /
+    }
+}

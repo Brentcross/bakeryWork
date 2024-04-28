@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Setup Cost Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="img-container">
+        <img src="images/costco.jpeg" alt="Costco Bakery Image" />
+    </div>
+    <h1>Cookie Setup Cost Calculator</h1>
+    <form onsubmit="calculateCosts(); return false;">
+        <div>
+            <label for="numStores">Number of Stores:</label>
+            <input type="number" id="numStores" value="850">
+        </div>
+        <div>
+            <label for="wage">Hourly Wage ($):</label>
+            <input type="number" id="wage" value="25">
+        </div>
+        <div>
+            <label for="time24">Time to Set Up 24-Cookie Pan (seconds):</label>
+            <input type="number" id="time24" value="25">
+        </div>
+        <div>
+            <label for="setupTime20">Setup Time for 20-Cookie Pan (seconds):</label>
+            <input type="number" id="setupTime20" value="20">
+        </div>
+        <div>
+            <label for="extraTime20">Extra Handling Time per 20-Cookie Pan (seconds):</label>
+            <input type="number" id="extraTime20" value="60">
+        </div>
+        <div>
+            <label>Include Potential Loss for 24-Cookie Pan:</label>
+            <input type="checkbox" id="includeLoss">
+        </div>
+        <div>
+            <label for="solidUnits">Number of Solid Cookie Sell Units:</label>
+            <input type="number" id="solidUnits" required>
+        </div>
+        <div>
+            <label for="varietyUnits">Number of Variety Cookie Sell Units:</label>
+            <input type="number" id="varietyUnits" required>
+        </div>
+        <div>
+            <label for="linerCost">Cost per Box of Liners ($):</label>
+            <input type="number" id="linerCost" value="44">
+        </div>
+        <button type="submit">Calculate Costs</button>
+    </form>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Parameter</th>
+                <th>24 Cookies per Pan</th>
+                <th>20 Cookies per Pan</th>
+            </tr>
+        </thead>
+        <tbody id="results"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
